@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPD Patient Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>IPd Patient Detail</h1>
+
+    <input type="text" id="customer-date" placeholder="Date" aria-label="Date">
+    <input type="text" id="customer-name-1" placeholder="Name">
+    <input type="text" id="customer-name-2" placeholder="Panel">
+    <input type="text" id="customer-name-3" placeholder="Amount">
+    <input type="text" id="customer-name-4" placeholder="Days ">
+    <input type="text" id="customer-comment" placeholder="Comment">
+
+    <div class="form-actions">
+        <button id="addBtn" type="button">Add</button>
+        <button id="printBtn" class="print-btn" type="button">Print</button>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search patient by name...">
+    </div>
+
+    <div id="printable-area">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Panel</th>
+                    <th>Amount</th>
+                    <th>Days</th>
+                    <th>Comment</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
